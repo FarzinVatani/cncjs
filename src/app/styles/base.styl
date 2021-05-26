@@ -2,13 +2,15 @@
 // Base styles: opinionated defaults
 // ==========================================================================
 
+@import './gruvbox'
+
 body {
     margin: 0;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 13px;
-    color: #222222;
+    color: $fg;
     text-align: left;
-    background-color: #ffffff;
+    background-color: $bg;
     min-width: 960px;
 
     @media (max-width: 767px) {
@@ -23,12 +25,14 @@ body {
  */
 
 ::-moz-selection {
-    background: #b3d4fc;
+    background: $fg;
+    color: $bg;
     text-shadow: none;
 }
 
 ::selection {
-    background: #b3d4fc;
+    background: $fg;
+    color: $bg;
     text-shadow: none;
 }
 
@@ -40,7 +44,7 @@ hr {
     display: block;
     height: 1px;
     border: 0;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid $darker_gray;
     margin: 1em 0;
     padding: 0;
 }

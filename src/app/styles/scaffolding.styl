@@ -1,4 +1,5 @@
 @import "variables";
+@import "gruvbox";
 
 //
 // Scaffolding
@@ -23,15 +24,15 @@
 
 html {
   font-size: $font-size-base;
-  -webkit-tap-highlight-color: $gray-base;
+  -webkit-tap-highlight-color: $gray;
 }
 
 body {
   font-family: $font-family-base;
   font-size: $font-size-base;
   line-height: $line-height-base-computed;
-  color: $text-color;
-  background-color: $body-bg;
+  color: $fg;
+  background-color: $bg;
 }
 
 // Reset fonts for relevant elements
@@ -48,13 +49,13 @@ textarea {
 // Links
 
 a {
-  color: $link-color;
-  text-decoration: $link-decoration;
+  color: $blue;
+  text-decoration: $br_blue;
 
   &:hover,
   &:focus {
-    color: $link-hover-color;
-    text-decoration: $link-hover-decoration;
+    color: $purple;
+    text-decoration: $br_purple;
   }
 
   &:focus {
@@ -83,7 +84,7 @@ hr {
   margin-top:    $line-height-base-computed;
   margin-bottom: $line-height-base-computed;
   border: 0;
-  border-top: 1px solid $hr-border;
+  border-top: 1px solid $darker_gray;
 }
 
 /*

@@ -1,4 +1,4 @@
-import '@trendmicro/react-modal/dist/react-modal.css';
+import './index.css';
 import Modal from '@trendmicro/react-modal';
 import chainedFunction from 'chained-function';
 import React, { PureComponent } from 'react';

@@ -1,4 +1,5 @@
 @import "variables";
+@import "gruvbox";
 
 //
 // Typography
@@ -31,13 +32,13 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-weight: $headings-font-weight;
   line-height: $headings-line-height;
-  color: $headings-color;
+  color: $aqua;
 
   small,
   .small {
     font-weight: normal;
     line-height: 1;
-    color: $headings-small-color;
+    color: $br_aqua;
   }
 }
 h1, .h1 {
@@ -154,8 +155,8 @@ del {
 // Highlight
 mark,
 .mark {
-  color: $gray-base;
-  background-color: $text-mark;
+  color: $gray;
+  background-color: $bg2;
 }
 
 // Alignment
@@ -188,7 +189,7 @@ mark,
 
 // Contextual colors
 .text-muted {
-    color: $text-muted;
+    color: $gray;
 }
 
 // Lists
@@ -282,7 +283,7 @@ abbr[title],
 // Add data-* attribute to help out our tooltip plugin, per https://github.com/twbs/bootstrap/issues/5257
 abbr[data-original-title] {
   cursor: help;
-  border-bottom: 1px dotted $abbr-border-color;
+  border-bottom: 1px dotted $darker_gray;
 }
 
 // Addresses
@@ -294,14 +295,14 @@ address {
 
 //Font Colors
 .text-error {
-  color: $brand-danger;
+  color: $red;
 }
 .text-warning {
-  color: $brand-warning;
+  color: $yellow;
 }
 .text-disabled {
   color: $gray;
 }
 .text-link {
-  color: $brand-primary;
+  color: $blue;
 }

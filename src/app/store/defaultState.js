@@ -16,7 +16,7 @@ const defaultState = {
             primary: {
                 show: true,
                 widgets: [
-                    'connection', 'console', 'grbl', 'marlin', 'smoothie', 'tinyg', 'webcam'
+                    'connection', 'console', 'grbl', 'webcam'
                 ]
             },
             secondary: {
@@ -58,7 +58,7 @@ const defaultState = {
         connection: {
             minimized: false,
             controller: {
-                type: 'Grbl' // Grbl|Marlin|Smoothie|TinyG
+                type: 'Grbl' // Grbl
             },
             port: '', // will be deprecated in v2
             baudrate: 115200, // will be deprecated in v2
@@ -113,32 +113,6 @@ const defaultState = {
         macro: {
             minimized: false
         },
-        marlin: {
-            minimized: false,
-            panel: {
-                heaterControl: {
-                    expanded: true
-                },
-                statusReports: {
-                    expanded: false
-                },
-                modalGroups: {
-                    expanded: false
-                }
-            },
-            heater: {
-                // Filament          | PLA                | ABS
-                // ----------------- | ------------------ | --------------------
-                // Uses              | Consumer Products  | Functional Parts
-                // Strength          | Medium             | Medium
-                // Flexibility       | Low                | Medium
-                // Durability        | Medium             | High
-                // Print Temperature | 180-230°C          | 210-250°C
-                // Bed Temperature   | 20-60°C (optional) | 80-110°C (mandatory)
-                extruder: 180,
-                heatedBed: 60
-            }
-        },
         probe: {
             minimized: false,
             probeCommand: 'G38.2',
@@ -148,37 +122,9 @@ const defaultState = {
             touchPlateHeight: 10,
             retractionDistance: 4
         },
-        smoothie: {
-            minimized: false,
-            panel: {
-                statusReports: {
-                    expanded: true
-                },
-                modalGroups: {
-                    expanded: true
-                }
-            }
-        },
         spindle: {
             minimized: false,
             speed: 1000
-        },
-        tinyg: {
-            minimized: false,
-            panel: {
-                powerManagement: {
-                    expanded: false
-                },
-                queueReports: {
-                    expanded: true
-                },
-                statusReports: {
-                    expanded: true
-                },
-                modalGroups: {
-                    expanded: true
-                }
-            }
         },
         visualizer: {
             minimized: false,

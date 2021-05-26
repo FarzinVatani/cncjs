@@ -1,7 +1,7 @@
 @import './theme';
 
 .widget {
-    background-color: #FFF;
+    background-color: $bg;
     margin-bottom: 10px;
 
     &.widget-borderless {
@@ -13,7 +13,7 @@
         .widget-header + .widget-content,
         .widget-header + .widget-footer,
         .widget-content + .widget-footer {
-            border-top: 1px solid #ccc;
+            border-top: 1px solid $darker_gray;
         }
     }
 
@@ -49,8 +49,8 @@
 
     .widget-header {
         clearfix();
-        background-color: #f6f7f8;
-        border: 1px solid #ccc;
+        background-color: $bg;
+        border: 1px solid $darker_gray;
         position: relative;
     }
     .widget-header-fixed {
@@ -76,6 +76,7 @@
         margin-bottom: 0;
         padding: 0 10px;
 
+        background-color: $bg;
         // Truncate string with ellipsis
         text-overflow: ellipsis;
         overflow: hidden;
@@ -86,7 +87,7 @@
 
     .widget-content,
     .widget-footer {
-        border: 1px solid #CCC;
+        border: 1px solid $darker_gray;
         border-top: none;
     }
 
@@ -114,12 +115,12 @@
             position: relative;
             font-size: 14px;
             font-family: Arial, Helvetica, sans-serif;
-            border-left: 1px solid rgba(0, 0, 0, .09);
+            border-left: 1px solid rgba($darker_gray, .09);
             margin: 0;
             text-align: center;
 
             &.disabled {
-                color: #bbb;
+                color: $gray;
                 cursor: not-allowed;
             }
 
@@ -127,15 +128,15 @@
                 background-color: inherit;
             }
             &:hover {
-                background-color: rgba(0, 0, 0, .05);
+                background-color: rgba($bg, .05);
             }
 
             &.inverted {
-                color: #fff;
-                background-color: #404040;
+                color: $fg;
+                background-color: $bg2;
             }
             &.inverted:hover {
-                background-color: #222;
+                background-color: $bg;
             }
             &.inverted.disabled {
                 opacity: .4;

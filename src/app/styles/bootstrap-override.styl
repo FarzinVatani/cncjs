@@ -1,3 +1,4 @@
+@import 'gruvbox';
 // Bootstrap Override
 th {
     font-weight: normal;
@@ -50,6 +51,11 @@ table tbody > tr > td {
 .table-bordered > thead > tr > td,
 .table-bordered > thead > tr > th {
     border-bottom-width: 1px;
+    border-color: $darker_gray;
+}
+
+.table-bordered > thead > tr > th, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > td{
+    border: 1px solid $darker_gray;    
 }
 
 // http://stackoverflow.com/questions/22920589/bootstrap-3-input-xs-smaller-than-sm
@@ -60,3 +66,93 @@ table tbody > tr > td {
     padding: 1px 5px;
     font-size: 13px;
 }
+
+.input-group-btn:last-child > .btn, .input-group-btn:last-child > .btn-group{
+    background: $bg0_s;
+    color: $br_blue;
+    border: 1px solid $darker_gray;
+}
+
+.input-group-btn > .btn:hover, .input-group-btn > .btn:focus, .input-group-btn > .btn:active{
+    background: $bg0_s;
+    color: $blue;
+}
+
+// Color Override
+.btn-default{
+color: #1d2021;
+border-color: #928374;
+background: #f7ecd2;
+}
+
+.btn-default:hover {
+    color: #1d2021;
+    border-color: #928374;
+    background: #ebdbb2;
+}
+
+.btn-default.focus, .btn-default:focus{
+    color: #282828;
+    background-color: #f7ecd2;
+    border-color: #ebdbb2;
+}
+
+.btn-default.active.focus,.btn-default.active:focus,.btn-default.active:hover,.btn-default:active.focus,.btn-default:active:focus,.btn-default:active:hover,.open>.dropdown-toggle.btn-default.focus,.open>.dropdown-toggle.btn-default:focus,.open>.dropdown-toggle.btn-default:hover{
+    color: #ebdbb2;
+    background-color: #1d2021;
+    border-color: #928374;
+}
+
+.btn-default.disabled.focus,.btn-default.disabled:focus,.btn-default.disabled:hover,.btn-default[disabled].focus,.btn-default[disabled]:focus,.btn-default[disabled]:hover,fieldset[disabled] .btn-default.focus,fieldset[disabled] .btn-default:focus,fieldset[disabled] .btn-default:hover{
+    background-color:#1d2021;
+    border-color:#ebdbb2;
+    color: #ebdbb2;
+}
+
+.btn .btn-primary{
+    background: $blue;
+}
+
+.btn .btn-success{
+    background: $aqua;
+}
+
+.btn .btn-warning{
+    background: $yellow;
+}
+
+.btn .btn-danger{
+    background: $red;
+}
+
+
+.btn .btn-primary:hover{
+    background: $br_blue;
+}
+
+.btn .btn-success:hover{
+    background: $br_aqua;
+}
+
+.btn .btn-warning:hover{
+    background: $br_yellow;
+}
+
+.btn .btn-danger:hover{
+    background: $br_red;
+}
+
+//input form
+.input-group-addon:last-child {
+    border-left: 0;
+    background: $bg0_h;
+    color: $fg;
+    border: 1px solid $darker_gray;
+}
+
+.form-control:focus{
+    border-color: $darker_gray;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba($bg, .075), 0 0 8px rgba($fg, .6);
+    box-shadow: inset 0 1px 1px rgba($bg, .075), 0 0 8px rgba($fg, .6);
+    }

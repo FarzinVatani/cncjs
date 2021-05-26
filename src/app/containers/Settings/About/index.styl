@@ -1,9 +1,10 @@
+@import '../../../styles/gruvbox';
 button + button {
     margin-left: 5px;
 }
 
 .learnmore {
-    color: #0060AC;
+    color: $blue;
     font-size: 14px;
 
     > * {
@@ -13,10 +14,10 @@ button + button {
 
 .label {
     display: inline-block;
-    color: #0060AC;
+    color: $aqua;
     border: 1px solid rgba(0, 0, 0, .1);
     border-radius: 3px;
-    border-color: #8daed9;
+    border-color: #darker_gray;
     padding: 4px 8px;
 }
 
@@ -61,10 +62,10 @@ button + button {
         }
 
         &.info {
-            color: #4078c0;
+            color: $blue;
         }
         &.warning {
-            color: #f0ad4e;
+            color: $yellow;
         }
     }
 
@@ -75,10 +76,10 @@ button + button {
     }
 
     .updateStatusMessage {
-        color: #222;
+        color: $fg;
     }
     .releaseLatest {
-        color: #767676;
+        color: $fg;
     }
 
     .updateStatusActionContainer {

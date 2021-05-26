@@ -1,4 +1,4 @@
-import '@trendmicro/react-navs/dist/react-navs.css';
+import './index.css';
 import '../Dropdown'; // CSS dependency
 
 export {

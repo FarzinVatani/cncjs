@@ -8,14 +8,7 @@ import RepeatButton from 'app/components/RepeatButton';
 import controller from 'app/lib/controller';
 import i18n from 'app/lib/i18n';
 import {
-    // Grbl
-    GRBL,
-    // Marlin
-    MARLIN,
-    // Smoothie
-    SMOOTHIE,
-    // TinyG
-    TINYG
+    GRBL
 } from '../../constants';
 import styles from './index.styl';
 
@@ -35,18 +28,6 @@ class Laser extends PureComponent {
         if (controllerType === GRBL) {
             const ovS = _.get(controllerState, 'status.ov[2]', []);
             scale = Number(ovS) || 0;
-        }
-        if (controllerType === MARLIN) {
-            const ovS = _.get(controllerState, 'ovS');
-            scale = Number(ovS) || 0;
-        }
-        if (controllerType === SMOOTHIE) {
-            const ovS = _.get(controllerState, 'status.ovS');
-            scale = Number(ovS) || 0;
-        }
-        if (controllerType === TINYG) {
-            const ovS = _.get(controllerSettings, 'sso');
-            scale = Math.round((Number(ovS) || 0) * 100);
         }
 
         return scale;

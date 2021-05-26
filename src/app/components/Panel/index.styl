@@ -1,7 +1,9 @@
+@import '../../styles/gruvbox';
+
 .panel {
-    background-color: #fff;
+    background-color: $bg;
     border: 1px solid transparent;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+    box-shadow: 0 1px 1px rgba($bg, .05);
     margin-bottom: 10px;
 }
 
@@ -15,12 +17,12 @@
 }
 
 .panel-default {
-    border-color: #ccc;
+    border-color: $darker_gray;
 
     > .panel-heading {
-        color: #333;
-        background-color: #fafafa;
-        border-color: #ccc;
+        color: $aqua;
+        background-color: $bg0_h;
+        border-color: $darker_gray;
     }
     > .panel-heading:last-child {
         border-color: transparent;

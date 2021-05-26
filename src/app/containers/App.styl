@@ -1,9 +1,11 @@
 @import "variables";
+@import "../styles/gruvbox.styl"
 
 .sidebar {
-    background-color: $sidebar-background-color;
+    background-color: $bg0_s;
     position: fixed;
     top: $navbar-height;
+    border-right: 1px solid $darker_gray;
     left: 0;
     bottom: 0;
     width: $sidebar-width;
@@ -16,11 +18,11 @@
     left: $sidebar-width;
     right: 0;
     bottom: 0;
-    background-color: $content-background-color;
+    background-color: $bg;
     min-width: $content-min-width;
 }
 
 .content {
     position: relative;
-    background-color: $content-background-color;
+    background-color: $bg;
 }

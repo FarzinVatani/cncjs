@@ -1,3 +1,5 @@
+@import "../../styles/gruvbox.styl";
+
 .navbar {
     position: relative;
 }
@@ -28,9 +30,9 @@
         > a {
             position: relative;
             display: block;
-            background-color: #222;
-            border-bottom: 1px solid #333;
-            color: #9d9d9d;
+            background-color: $bg0_s;
+            border-bottom: 1px solid $darker_gray;
+            color: $fg2;
             text-decoration: none;
             white-space: nowrap;
             padding: 10px 0;
@@ -41,8 +43,8 @@
         }
         > a:focus,
         > a:hover {
-            color: #fff;
-            background-color: #222;
+            color: $fg;
+            background-color: $bg0_s;
 
             > .icon.icon-invert {
                 filter: invert(100%);
@@ -53,8 +55,8 @@
         > a,
         > a:focus,
         > a:hover {
-            color: #fff;
-            background-color: #080808;
+            color: $fg;
+            background-color: $bg0_h;
 
             > .icon.icon-invert {
                 filter: invert(100%);

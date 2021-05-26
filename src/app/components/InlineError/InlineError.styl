@@ -1,13 +1,15 @@
+@import '../../styles/gruvbox';
+
 .help-block {
     display: block;
     margin-top: 4px;
-    color: #767676;
+    color: $fg;
     position: relative;
 
     &.help-block-invalid {
-        color: #db3d44;
+        color: $gray;
         .icon {
-            color: #db3d44; // override color of tm-font icon
+            color: $br_purple; // override color of tm-font icon
         }
     }
 

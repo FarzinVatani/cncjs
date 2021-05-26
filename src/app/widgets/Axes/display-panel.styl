@@ -1,3 +1,5 @@
+@import '../../styles/gruvbox';
+
 .display-panel {
     .coordinate {
         position: relative;
@@ -16,6 +18,7 @@
         white-space: nowrap;
         padding: 0;
         width: 48%;
+        border: 1px solid $darker_gray;
     }
 
     .action {
@@ -28,21 +31,25 @@
             border-radius: 0;
 
             > * {
-                color: #666;
+                color: $darker_gray;
             }
 
             &:disabled:hover {
                 background-color: inherit;
                 > * {
-                    color: #666;
+                    color: $darker_gray;
                 }
             }
             &:hover {
-                background-color: #e6e6e6;
+                background-color: $darker_gray;
                 > * {
-                    color: #333;
+                    color: $fg;
                 }
             }
         }
     }
+}
+
+.pull-right{
+    color: #fff;
 }

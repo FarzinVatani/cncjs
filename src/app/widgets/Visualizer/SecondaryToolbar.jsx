@@ -57,7 +57,7 @@ const IconButton = styled(Button)`
         background-image: none;
         background-color: rgba(255, 255, 255, .7);
         outline: 0;
-        color: #333;
+        color: #ebdbb2;
         text-decoration: none;
         filter: invert(100%);
     }
@@ -72,7 +72,7 @@ const IconButton = styled(Button)`
     &:focus,
     &:active {
         outline: 0;
-        color: #333;
+        color: #ebdbb2;
         text-decoration: none;
     }
 
